@@ -1,0 +1,91 @@
+<section id="login">
+    <div class="container">
+    	<div class="row">
+    	    <div class="col-xs-12">
+        	    <div class="form-wrap">
+                <h1>Incident ID</h1>
+                    <form #form="ngForm" (ngSubmit)="submit(form.value)">
+
+                        <div class="form-group">
+                            <label class="sr-only">Name</label>
+                            <input type="text" name="name" [(ngModel)]="name" placeholder="Type the name">
+                        </div>
+                
+                        <div class="form-group">
+                            <label class="sr-only">Incident ID</label>
+                            <input type="checkbox" name="incidentid" required [(ngModel)]="incidentid" placeholder="Type the Incident ID">
+                        </div>
+ 
+                        <div class="form-group">
+                            <label class="sr-only">Tags</label>
+                            <input type="text" class="form-control" name="tags" [(ngModel)]="tags" placeholder="Tag the incident ID here">
+                        </div>
+
+                      <div class="form-group">
+                        <label class="sr-only">Date</label>
+                        <input type="date" name="date" required [(ngModel)]="date">
+                      </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Trigger ID</label>
+                            <input type="text" class="form-control" name="triggerid" required [(ngModel)]="triggerid" placeholder="Enter the Trigger ID here">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Indicator</label>
+                            <input type="text" type="submit2" class="form-control" name="indictor" required [(ngModel)]="indictor" placeholder="Tag the incident ID here">
+                        </div>
+                        
+                        
+
+                        <div class="form-group">
+                            <label class="sr-only">Observable</label>
+                            <input type="text" class="form-control" name="observable" required [(ngModel)]="observable" placeholder="Enter the value ">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Threat Actor</label>
+                            <input type="text" class="form-control" name="threatactor" required [(ngModel)]="threatactor" placeholder="Enter the value ">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Reconnaissance:</label>
+                            <input type="text" class="form-control" name="reconnaissance" required [(ngModel)]="reconnaissance" placeholder="Enter the value ">
+                        </div>
+ 
+                        <div class="form-group">
+                            <label class="sr-only">Weaponization</label>
+                            <input type="text" class="form-control" name="weaponization" required [(ngModel)]="weaponization" placeholder="Enter the value ">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Delivery</label>
+                            <input type="text" class="form-control" name="delivery" required [(ngModel)]="delivery" placeholder="Enter the value ">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Exploitation</label>
+                            <input type="text" class="form-control" name="exploitation" required [(ngModel)]="exploitation" placeholder="Enter the value ">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="sr-only">Installation</label>
+                            <input type="text" class="form-control" name="installation" required [(ngModel)]="installation" placeholder="Enter the value ">
+                        </div>
+   
+                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block">
+                        <div>
+                            <p>{{indicatorDetails.key1}}</p>
+                            <p>{{indicatorDetails.key2}}</p>
+                            <p>{{indicatorDetails.key3}}</p>
+                        </div>
+                    </form>
+                   
+                
+        	    </div>
+    		</div> 
+    	</div> 
+    </div> 
+</section>
+
+
